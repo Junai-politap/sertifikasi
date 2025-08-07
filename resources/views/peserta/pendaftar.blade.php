@@ -34,17 +34,15 @@
                             <select name="jenis_sertifikasi" class="form-control" required>
                                 <option value=""> Pilih Jenis Sertifikasi</option>
 
-                                @if ($junior_web->count('Junior Web') >= 0 && $junior_web->count('Junior Web') < 15)
-                                    <option value="Junior Web"> Junior Web</option>
+                                @if ($junior_web->count('Junior Web') >= 0 && $junior_web->count('Junior Web') < 5)
+                                    <option value="Junior Web Programing"> Junior Web Programing</option>
                                 @endif
 
-                                @if ($junior_desain->count('Junior Desain') >= 0 && $junior_desain->count('Junior Desain') < 15)
-                                <option value="Junior Desain"> Junior Desain</option>
+                                @if ($junior_desain->count('Junior Desain') >= 0 && $junior_desain->count('Junior Desain') < 5)
+                                <option value="Junior Grapich Designer"> Junior Grapich Designer</option>
                                 @endif
 
-                                @if ($junior_network->count('Junior Network') >= 0 && $junior_network->count('Junior Network') < 15)
-                                <option value="Junior Network"> Junior Network</option>
-                                @endif
+                            
                             </select>
                         </div>
                     </div>

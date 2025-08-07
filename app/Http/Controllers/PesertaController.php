@@ -12,9 +12,8 @@ class PesertaController extends Controller
      */
     public function index()
     {
-        $data['junior_web'] = Peserta::all();
-        $data['junior_desain'] = Peserta::all();
-        $data['junior_network'] = Peserta::all();
+        $data['junior_web'] = Peserta::where('jenis_sertifikasi', 'Junior Web Programing')->get();
+        $data['junior_desain'] = Peserta::where('jenis_sertifikasi', 'Junior Grapich Designer')->get();
 
         return view('peserta.pendaftar', $data);
     }
